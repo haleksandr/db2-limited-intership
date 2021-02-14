@@ -1,0 +1,51 @@
+.todo__task-list-item {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  margin-top: 10px;
+
+  .btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    &.btn-done {
+      background: #ffffff;
+      border: 2px solid lightgreen;
+      background-color: white;
+      border-radius: 11px;
+      padding: 5px;
+      color: #000000;
+      display: inline-block;
+      text-align: center;
+
+      &:hover {
+        background-color: lightgreen;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    &.btn-delete {
+      background: #ffffff;
+      border: 2px solid lightcoral;
+      background-color: white;
+      border-radius: 11px;
+      padding: 5px;
+      color: #000000;
+      display: inline-block;
+      text-align: center;
+
+      &:hover {
+        background-color: lightcoral;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .done {
+    text-decoration: line-through;
+    color: gray;
+  }
+}

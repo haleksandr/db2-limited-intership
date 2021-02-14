@@ -1,0 +1,13 @@
+.todo__tasks {
+  width: 750px;
+  height: 75%;
+  li {
+    font-size: 24px;
+    margin: 10px 0;
+
+    &.done {
+      color: red;
+      text-decoration: line-through;
+    }
+  }
+}
