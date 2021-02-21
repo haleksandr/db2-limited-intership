@@ -13,6 +13,7 @@ const NewTask = () => {
     dispatch(updateNewTaskAC(newTaskText));
   };
 
+  // e.keyCode === 13
   const addNewTask = (e) => {
     if (newTaskText.length < 1) {
       alert('FIELD IS EMPTY');
@@ -22,14 +23,26 @@ const NewTask = () => {
     }
   };
 
+  const addNewTaskInp = (e) => {
+    if (newTaskText.length === '') {
+      alert('FIELD IS EMPTY');
+    } else if (e.key === 'Enter' && newTaskText.length > 1) {
+      dispatch(addNewTaskAC(newTaskText));
+      dispatch(updateNewTaskAC(''));
+    }
+  };
+
   return (
     <div className="todo__new-task">
       <input
+        required
         className="fieldNewTask"
         type="text"
         onChange={handleChange}
         placeholder="Enter your task here"
         value={newTaskText}
+        // onKeyPress={(e) => addNewTaskInp(e)}
+        onKeyPress={addNewTaskInp}
       />
       <button className="buttonNewTask" onClick={addNewTask}>
         ADD NEW TASK
