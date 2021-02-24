@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as types from '../types';
 
 const initialState = {
@@ -25,9 +26,7 @@ const todoReducer = (state = initialState, action) => {
     case types.TOGGLE_DONE_TASK:
       return {
         ...state,
-        tasksData: state.tasksData.map((todo) =>
-          todo.id === action.payload ? { ...todo, done: !todo.done } : todo
-        ),
+        tasksData: state.tasksData.map((todo) => (todo.id === action.payload ? { ...todo, done: !todo.done } : todo)),
       };
     case types.DELETE_TASK:
       const numIndex = parseInt(action.payload);

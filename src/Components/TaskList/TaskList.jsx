@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { useSelector } from 'react-redux';
 
@@ -14,11 +15,7 @@ const TaskList = (props) => {
       <ul className="todo__tasks">
         {tasksData.map((item, index) => (
           <li key={index}>
-            <TaskListItem
-              labelTask={item.labelTask}
-              id={item.id}
-              done={item.done}
-            />
+            <TaskListItem labelTask={item.labelTask} id={item.id} done={item.done} />
           </li>
         ))}
       </ul>

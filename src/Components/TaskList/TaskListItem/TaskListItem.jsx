@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import classNames from 'classnames';
@@ -18,9 +19,7 @@ const TaskListItem = (props) => {
 
   return (
     <div className="todo__task-list-item">
-      <p className={classNames(props.className, { done: props.done })}>
-        {props.labelTask}
-      </p>
+      <p className={classNames(props.className, { done: props.done })}>{props.labelTask}</p>
       <div>
         <button className="btn btn-done" onClick={toggleStatusTask}>
           DONE

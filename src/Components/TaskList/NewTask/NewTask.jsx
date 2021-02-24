@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -13,7 +14,6 @@ const NewTask = () => {
     dispatch(updateNewTaskAC(newTaskText));
   };
 
-  // e.keyCode === 13
   const addNewTask = (e) => {
     if (newTaskText.length < 1) {
       alert('FIELD IS EMPTY');
@@ -23,10 +23,8 @@ const NewTask = () => {
     }
   };
 
-  const addNewTaskInp = (e) => {
-    if (newTaskText.length === '') {
-      alert('FIELD IS EMPTY');
-    } else if (e.key === 'Enter' && newTaskText.length > 1) {
+  const addNewTaskInp = (event) => {
+    if (event.key === 'Enter' && newTaskText.length >= 1) {
       dispatch(addNewTaskAC(newTaskText));
       dispatch(updateNewTaskAC(''));
     }
@@ -41,8 +39,7 @@ const NewTask = () => {
         onChange={handleChange}
         placeholder="Enter your task here"
         value={newTaskText}
-        // onKeyPress={(e) => addNewTaskInp(e)}
-        onKeyPress={addNewTaskInp}
+        onKeyDown={addNewTaskInp}
       />
       <button className="buttonNewTask" onClick={addNewTask}>
         ADD NEW TASK
