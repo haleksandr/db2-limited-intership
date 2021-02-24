@@ -14,7 +14,7 @@ const NewTask = () => {
     dispatch(updateNewTaskAC(newTaskText));
   };
 
-  const addNewTask = (e) => {
+  const addNewTask = () => {
     if (newTaskText.length < 1) {
       alert('FIELD IS EMPTY');
     } else {
