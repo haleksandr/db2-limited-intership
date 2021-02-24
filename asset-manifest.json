@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/db2-limited-intership/static/css/main.c6002eaa.chunk.css",
-    "main.js": "/db2-limited-intership/static/js/main.b9889859.chunk.js",
-    "main.js.map": "/db2-limited-intership/static/js/main.b9889859.chunk.js.map",
+    "main.css": "/db2-limited-intership/static/css/main.4ad50e77.chunk.css",
+    "main.js": "/db2-limited-intership/static/js/main.45970daa.chunk.js",
+    "main.js.map": "/db2-limited-intership/static/js/main.45970daa.chunk.js.map",
     "runtime-main.js": "/db2-limited-intership/static/js/runtime-main.5e418b5a.js",
     "runtime-main.js.map": "/db2-limited-intership/static/js/runtime-main.5e418b5a.js.map",
     "static/js/2.efb898f1.chunk.js": "/db2-limited-intership/static/js/2.efb898f1.chunk.js",
     "static/js/2.efb898f1.chunk.js.map": "/db2-limited-intership/static/js/2.efb898f1.chunk.js.map",
     "index.html": "/db2-limited-intership/index.html",
-    "static/css/main.c6002eaa.chunk.css.map": "/db2-limited-intership/static/css/main.c6002eaa.chunk.css.map",
+    "static/css/main.4ad50e77.chunk.css.map": "/db2-limited-intership/static/css/main.4ad50e77.chunk.css.map",
     "static/js/2.efb898f1.chunk.js.LICENSE.txt": "/db2-limited-intership/static/js/2.efb898f1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5e418b5a.js",
     "static/js/2.efb898f1.chunk.js",
-    "static/css/main.c6002eaa.chunk.css",
-    "static/js/main.b9889859.chunk.js"
+    "static/css/main.4ad50e77.chunk.css",
+    "static/js/main.45970daa.chunk.js"
   ]
 }
